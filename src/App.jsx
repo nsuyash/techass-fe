@@ -8,7 +8,6 @@ import EngineerDashboard from "./pages/EngineerDashboard";
 import ProjectForm from "./pages/ProjectForm";
 import AssignmentForm from './pages/AssignmentForm';
 import ProfilePage from "./pages/ProfilePage";
-import Unauthorized from "./pages/Unauthorized";
 
 const PrivateRoute = ({ children, roles }) => {
   const { user } = useAuth();
@@ -47,8 +46,6 @@ const App = () => (
             <ProfilePage />
           </PrivateRoute>
         } />
-        <Route path="/unauthorized" element={<Unauthorized />} />
-
         <Route path="*" element={<Navigate to="/login" />} />
       </Routes>
     </BrowserRouter>
