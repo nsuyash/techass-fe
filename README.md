@@ -48,9 +48,8 @@ Password: password
 
 ## ⚙️ Getting Started
 
-**Clone the repo**  
-   ```bash
-   git clone https://github.com/your-username/engineering-resource-mgmt.git
+**Clone the repo** 
+   git clone https://github.com/nsuyash/techass-fe
    cd erms-fe
 
 ## 👤 Contact
