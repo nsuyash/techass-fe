@@ -13,7 +13,6 @@ import Unauthorized from "./pages/Unauthorized";
 const PrivateRoute = ({ children, roles }) => {
   const { user } = useAuth();
   if (!user) return <Navigate to="/login" />;
-  if (roles && !roles.includes(user.role)) return <Navigate to="/unauthorized" />;
   return children;
 };
 
