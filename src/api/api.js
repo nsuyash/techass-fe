@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:3000";
+const API_BASE = "https://geeky-ant-be.vercel.app";
 
 export const loginUser = async (email, password) => {
   const res = await fetch(`${API_BASE}/auth/login`, {
